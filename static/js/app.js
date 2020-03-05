@@ -6,7 +6,7 @@
 function getPlot(id) {
 // ### 1. Use the D3 library to read in `samples.json`.
     d3.json("../../samples.json").then((data)=> {
-        // console.log(data)
+        console.log(data)
 
 
         // ### 2. Create a horizontal bar chart with a dropdown menu to 
@@ -22,7 +22,7 @@ function getPlot(id) {
 
         // Get the first sample id from samples of the data set
         var sample = data.samples.filter(s => s.id.toString() === id)[0];
-        var testSamp = 99;
+        // var testSamp = 99;
         console.log(sample);
 
         // Get top 10 `sample_values` for that individual 
